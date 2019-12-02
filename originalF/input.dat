@@ -1,0 +1,22 @@
+# GRID #
+GRID_Ndim             	2    	Ndim number of dimension (1D or 2D or 3D)
+--------DIRECTION x
+GRID_disc_1             1024    number of cells in the x direction
+GRID_X_1             	0.      starting coordinate (left edge of first cell carefull for EM2C expe cf gsp)
+GRID_Lx_1            	5.       grid length
+-------DIRECTION y
+GRID_disc_2          	256    number of cells in the y direction
+GRID_X_2             	0.      starting coordinate (left edge of first cell)
+GRID_Lx_2            	2.       grid length
+--------DIRECTION z             ignored if Ndim < 3
+GRID_disc_3          	1       number of cells in the z direction
+GRID_X_3             	0.      starting coordinate (left edge of first cell)
+GRID_Lx_3            	3.       grid length
+============================================================================
+# TURBULENCE #
+RE                      1000000   Reynolds Number dimensionless parameter for the turbulent flow
+
+END
+===========================================================================
+# END FILE #
+

@@ -1,0 +1,5 @@
+alias gits='git status -s'
+alias gita='git add .'
+alias sb='source ~/.bashrc'
+sourcing is needed to take into account the changes of the bashrc in the current terminal
+

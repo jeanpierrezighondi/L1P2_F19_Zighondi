@@ -1,0 +1,4 @@
+D -> master, origin/master) created a script that deletes exec files
+9e39ec6 added script that calc perimeter rect
+885949d copied dem.data
+744f917 first commit
