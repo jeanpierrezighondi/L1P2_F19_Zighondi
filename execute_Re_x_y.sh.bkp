@@ -1,0 +1,22 @@
+echo "Running the input preparation for the turbulent simulation"
+n=1
+for Re in 10000 50000 100000 500000 1000000
+do
+m=1
+for xMesh in 512 1024
+do
+o=1
+for yMesh in 128 256
+do
+mkdir Simulation${n}_${m}_${o}
+cd originalF
+sed -e "s/rrrrrrr/${Re}/" -e "s/xxxx/${xMesh}/" -e "s/yyy/${yMesh}/" inputOrig > input.dat
+cp input.dat ../Simulation${n}_${m}_${o}
+cd ../
+o=$(( $o + 1 ))
+done
+m=$(( $m + 1 ))
+done
+n=$(( $n + 1 ))
+done
+echo "input file preparation is done"
